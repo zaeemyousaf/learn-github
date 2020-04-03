@@ -1,0 +1,8 @@
+# Learn GitHub in fancy way
+### Author: Zaeem Yousaf
+
+
+## Learning github is easy when learning envrironment is powerfull.
+#### I had spent almost years learning github from different resources but still feel a lot of difficulities in extracting the meaning from verbose paragraphs. I had to scan the pages for just one relevant command.
+
+### I have differnt approach to handle the confusion of an individual
