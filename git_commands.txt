@@ -1,0 +1,44 @@
+purpose based larning
+p-> purpose
+m-> method
+
+p: "making online code storage"
+   Make repository
+   Download git on local machine
+   initialize git folder
+   set up your local account
+   clone your git repository
+   ready to serve
+
+p: "Team work"
+   set up local git
+   allow other team member
+   
+m: "Make repository"
+   create signup
+   login and create 'new repository'
+   choose appropriate name
+   make private if data is private else public
+   else do nothing and press create button
+
+m: "Download git on local machine"
+   search online or watch tutorial
+
+m: "initialize git folder"
+   git init
+
+m: "set up your local account"
+   git config --global user.name "name"
+   git config --global user.email "email@something.com"
+   git config --global user.password *********
+   to see your detail
+   git config --list
+
+m: "clone your git repository"
+
+m: "ready to serve"
+   git add *
+   git commint -m "comment"
+   git push -u origin master
+   give user.name and password which work on github web
+ 
