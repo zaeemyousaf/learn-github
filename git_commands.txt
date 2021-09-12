@@ -38,7 +38,19 @@ m: "clone your git repository"
 
 m: "ready to serve"
    git add *
-   git commint -m "comment"
+   git commit -m "comment"
+   or
+   git commit --amend //updates previous commit
    git push -u origin master
    give user.name and password which work on github web
- 
+
+//==================
+git reflog	# shows the history of head changed
+git resotre filename # to discard changes and roll back to previous commit
+git diff > patchname.patch # create a patch
+git apply patchname.patch  # to apply patch 
+// setting up personal token
+1: go to github -> setting -> developer -> generate token
+2: copy the token and use it as password once
+3: then type the following command to store this password
+git config --global credential.helper cache

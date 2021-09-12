@@ -1,0 +1,141 @@
+# Linux commands
+:~$ sudo -su				# to sign in as root
+:~$ man command				# to view mannual of command 
+:~$ sudo apt-get install package
+:~$ sudo apt-get remove package
+:~$ sudo apt-get upgrade package
+:~$ top	# task managers
+:~$ ls	# list directory
+:~$ ls -l				# list directory with detail in list form
+:~$ ls-m # list directory without detail
+:~$ clear # to clear shell
+:~$ sudo find -iname *.conf		# will find all file that end with .conf
+:~$ sudo mkdir foldername
+:~$ sudo rm folderName/fileName
+:~$ sudo rm -R folderName/fileName 	# removes every thing recursively
+:~$ sudo mv oldFileName	NewFileName	# to rename a file
+:~$ sudo mv /file /etc file		# to move file from one place to another
+:~$ sudo cp fileToBeCopied newName	# to copy file to newName
+:~$ sudo cp fileToBeCopied newName -R	# to copy every thing in the folder
+:~$ fdisk -l	# lists physical drives available
+:~$ sudo mount /dev/suda5 /mnt/drive	# mount /dev/suda5 on drive folder in mnt folder
+:~$ sudo apt-get clean packageName	# removing downloaded package file
+:~$ sudo apt-get purge packageName	# removing everything package file
+:~$ sudo apt-cache search PackageName	# search package in repository
+:~$ sudo apt-cache show packageName	# show detail of package
+:~$ sudo apt-cache policy PackageName	# check if package is installed
+:~$ sudo apt-cache pkgnames		# to list all packages installed
+:~$ dpkg -i packagename.deb		# installing from deb package
+:~$ dpkg --list				# list package currentyl installed
+:~$ sudo ln -s original shortcut	# to create shortcut
+:~$ nano file.type			# to make file.type
+:~$ #!/usr/bin/program			# hashbang to invoke program
+:~$ gcc -s,-o source.c -o output.out	# -s-> assembly, -o-> object_code
+:~$ synclient TouchpadOff=0		# turn touch pad enable
+:~$ synclient TouchpadOff=1		# disable touch pad
+:~$ strace program_name			# debug program
+:~$ lsmod				# list kernel modules loaded
+:~$ uname				# returns kernel name
+:~$ echo $USER				# print user name
+#-------------------
+:~$
+activating java in browser
+Mozilla Firefox
+
+    Become the root user by running the su command and then enter the super-user password. Type:
+    sudo -s
+    Create a directory called plugins if you do not have it. Type:
+    mkdir -p /usr/lib/firefox-addons/plugins
+    Go to Mozilla plugins directory before you make the symbolic link. Type:
+    cd /usr/lib/firefox-addons/plugins
+    Create a symbolic link. Type:
+    ln -s /usr/local/java/jre1.7.0/lib/amd64/libnpjp2.so
+    Restart your browser and test Java
+#-------------------
+:~$ ls > /dir/place/etc/		# angle  bracket refers and saves output to file
+:~$ gnome-open file.extension		# to open a file as double clicking
+:~$ | less				# to view line by line etc
+:~$ hostname				# returns hostname
+:~$ who					# who is currently logedIn
+:~$ who am i				# who is currently logedIn
+:~$ passwd				# change your password
+:~$ cd ~-				# go to previous directory
+:~$ cd					# cd will nevigate to home dir
+:~$ date +%m				# etc for more info 'date --help'
+:~$ wc file				# word count , line and characters of a file
+:~$ head file				# print just first line of a file
+:~$ tail file				# print just last line of file
+:~$ tar -cvf output.tar file2 folder1..	# archive 'c: creates, v: verbose, f: file' 
+:~$ tar -xzvf file.tar			# to extract from file.tar
+#-------------------
+:~$ gzip file				# compression method old
+:~$ bzip2 file				# compression method light-weight and efficient
+:~$ gunzip file				# unzip gzip file.gz
+:~$ bunzip file				# unzip bzip2
+:~$ zip	file				# compression method for windows file
+:~$ unzip -d FolderName file		# unzip into FolderName
+:~$ lsusb				# to list connected device
+:~$ blkid				# to list Block_ID --> devices etc
+:~$ mount				# to list mounted devices
+:~$ command | grep Match_something	# to find 'Match_Something' in command output
+#-------------------
+:~$ chmod u+r FileName			# ChangeMode of file, User can read file
+:~$ chmod g+r FileNme			# reading permission for group
+:~$ chmod o+r FileName			# reading permission for others who are not users
+:~$ chmod a+r FileName			# reading permission set true to all on system
+:~$ chmod u+w FileName			# set writing permission for users
+:~$ chmod g+w FileName			# set writing permission for group
+:~$ chmod g-rw FileName			# set Reading and Writing permission off for group
+:~$ chmod g+x FileName			# set premission to execute for group
+:~$ chmod [ugoa][+-][rwx]		# possible combinations
+#-------------------
+:~$ evince File.pdf			# to open file in x windows
+:~$ Ctrl Z				# this will suspend terminal task
+:~$ bg					# to restore background task
+:~$ jobs				# list background jobs
+:~$ fg job_number			# to bring back jobs on front
+:~$ ps					# list process you started and PIDs
+:~$ kill %vlc,etc			# kill process by name
+:~$ kill PID				# kill with Program ID
+:~$ kill -9 PID				# kill forcefully program ID
+:~$ ps					# list all process 
+:~$ pidof firefox			# process id of firefox
+#-------------------
+:~$ locate fileName			# to search file
+#------------------
+:~$ df 					# disk free information
+:~$ df /				# disk free of '/' linux
+#------------------
+:~$ du					# disk used
+:~$ du -h				# disk used in human readable format
+:~$ du -hs				# total usage
+#-----------------
+:~$ free -options			# list free Ram
+#-----------------
+:~$ passwd				# chnage password
+:~$ su usersName			# to login to newUsers
+#----------------
+:~$ alias Name=Definition		# assign new command with previous
+:~$ unalias Name			# to delete set alias
+:~$ export name="variable"		# to set an environment variable
+:~$ unset name				# to delete variable
+#----------------
+:~$ unity-control-center		# open setting panel
+:~$ unity-control-center mouse		# open mouse setting panel
+:~$ unity-control-center Name		# open Name_etc setting panel
+:~$ sudo nautilus			# to access root_Gui
+:~$ eog imgName			# 'eye of gnome' launch gnome image viewer
+#----------------
+:~$ poppler-utils			# brings functionality of pdt to text etc.
+#----------------
+:~$ less				# less cancatnates anything.anthing to stdoutput
+#----------------
+:~$ whereis package		# to get dirInfo of package
+:~$ nano ~/.bashrc			# after booting this file is read, define your custom func
+:~$ whatis manpage		# to get the man page number
+:~$ groff manpage		     	 # to create the man pages
+:~$ make whatis				 # to compile man pages after they are compressed
+key to search on internet (how to write your own man page in linux)
+:~$ ps -a 	      	 	       	  	# ps lists all process
+:~$ ps -A 					# list all process running in term an unity background
+:~$ apropos keyword			# searches keyword in all man pages and display
